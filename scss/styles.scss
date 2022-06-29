@@ -1,0 +1,139 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/extend";
+
+*{
+    @extend %Reset
+}
+body{
+    background-color: $color-principal ;
+}
+header{
+    background-color: #421B9B;
+    padding: 0,5rem;
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+nav{
+    background-color: #A06EE1;
+    padding: 0,5rem;
+    position: sticky;
+    top: 5%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+main{
+    p{
+        background-color: #CBBCF6;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top: 10%;
+        }
+}
+form{
+    background-color: #CEF9E2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    bottom: 0%;
+    right: 0%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .imagenes{
+        top: 10%;
+        padding: 1.5rem;
+        display: grid;
+    }
+    
+    .publi{
+        padding: 1.5rem;
+        display: grid;
+        .pcGamer{
+            margin: 50px;
+            height: 180px;
+            border: 3px solid black;
+            @include flex
+        }
+    }
+    .publi{
+        padding: 1.5rem;
+        display: grid;
+        .pcGamer2{
+            margin: 50px;
+            height: 270px;
+            border: 3px solid black;
+            @include flex
+        }
+    }
+
+    .publi{
+        padding: 1.5rem;
+        display: grid;
+        .Productos{
+            margin: 40px;
+            height: 290px;
+            border: 3px solid black;
+            @include flex
+        }
+    }
+
+    @media screen and (min-width:600px) {
+        .imagenes{
+            display: block;
+            grid-area: pSec;
+        }
+    }
+    @media screen and (min-width:700px) {
+        .publi{
+            grid-template-areas: "pcGamer pcGamer"
+                                 "pcGamer pcGamer"
+                                 "pcGamer pcGamer"
+                                  "pcGamer pcGamer"
+                                  "pcGamer pcGamer"
+                                  "pcGamer pcGamer";
+        }
+    }
+    @media screen and (min-width:950px) {
+        .publi{
+            grid-template-areas: "pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer"
+                                  "pcGamer pcGamer pcGamer";
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .publi{
+            grid-template-areas: "pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer"
+                                  "pcGamer pcGamer pcGamer";
+        }
+    }
+    @media screen and (min-width:1500px) {
+        .publi{
+            grid-template-areas: "pcGamer pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer pcGamer"
+                                 "pcGamer pcGamer pcGamer pcGamer";
+        }
+    }

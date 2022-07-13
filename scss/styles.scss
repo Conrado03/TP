@@ -42,6 +42,15 @@ nav{
     }
 }
 
+.slide{
+    display: grid;
+    top: 20px;
+}
+.imagenes
+    p{
+        text-align: center;
+    }
+
 main{
     p{
         background-color: #CBBCF6;
@@ -59,13 +68,7 @@ footer{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-
-    .imagenes{
-        top: 10%;
-        padding: 1.5rem;
-        display: grid;
-    }
-    
+ 
     .publi{
         padding: 1.5rem;
         display: grid;
@@ -98,12 +101,6 @@ footer{
         }
     }
 
-    @media screen and (min-width:600px) {
-        .imagenes{
-            display: block;
-            grid-area: pSec;
-        }
-    }
     @media screen and (min-width:700px) {
         .publi{
             grid-template-areas: "pcGamer pcGamer"
